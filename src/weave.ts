@@ -27,7 +27,7 @@ async function weave_core(column, selected_format: string = undefined) {
 
         await fs.writeTextFile(source_filename, source_text, 'utf8')
 
-        output_filename = path.join(temporary_dirname, 'output-file.html')
+        output_filename = path.join(temporary_dirname, 'source-file.html')
     }
     else {
         source_filename = vscode.window.activeTextEditor.document.fileName
