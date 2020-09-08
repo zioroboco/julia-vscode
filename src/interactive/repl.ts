@@ -293,6 +293,7 @@ async function selectJuliaBlock() {
 }
 
 const g_cellDelimiters = [
+    /^```(julia|jl)?$/, // markdown code blocks
     /^##(?!#)/,
     /^#(\s?)%%/
 ]
